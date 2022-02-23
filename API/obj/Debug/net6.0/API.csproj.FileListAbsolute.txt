@@ -66,3 +66,10 @@ C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\
 C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Humanizer.dll
 C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

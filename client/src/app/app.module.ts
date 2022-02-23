@@ -8,6 +8,13 @@ import { Component3Component } from './component3/component3.component';
 import { Component4Component } from './component4/component4.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NavComponent } from './nav/nav.component';
+import { FormsModule } from '@angular/forms';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { HomepageComponent } from './homepage/homepage.component';
+import { RegisterComponent } from './register/register.component';
+
+
 
 @NgModule({
   declarations: [
@@ -16,13 +23,18 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     Component2Component,
     Component3Component,
     Component4Component,
+    NavComponent,
+    HomepageComponent,
+    RegisterComponent,
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    BsDropdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,10 +3,9 @@
    <hr>
    <div class="form-group">
 <!-- always add name attribute in inputs as Angular is tracking what is being put via form with it -->
-        <input type="text" class="form-control" name="username" style="margin:10px;"
-        [(ngModel)]="model.username" placeholder="Username">
+        <input type="text" class="form-control" name="username" style="margin:10px;" [(ngModel)]="model.username" placeholder="Username">
          </div>
-<!-- example of module that takes data from parent (homepage) component -->
+<!-- example of module that takes data from parent (homepage) component !-->
         <!-- <div class="form-group">
             <label>Who is your favourite user?</label>
             <select class="form-control">
@@ -19,8 +18,7 @@
 
    <div class="form-group">
     <!-- always add name attribute in inputs as Angular is tracking what is being put via form with it -->
-           <input type="password" class="form-control mr-2" name="password" style="margin:10px;"
-            [(ngModel)]="model.password" placeholder="Password">
+           <input type="password" class="form-control mr-2" name="password" style="margin:10px;" [(ngModel)]="model.password" placeholder="Password">
     </div>
     <div class="form-group text-center">
         <button class="btn btn-success mr-2" type="submit">Register</button>

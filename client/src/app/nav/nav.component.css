@@ -1,8 +1,12 @@
  .dropdown-toggle, .dropdown-item {
-     cursor:pointer;
- }
  
- nav{
-     max-height: 50px ;
  }
- 
+  
+
+ form {
+     display: inherit;
+ }
+
+ option {
+     cursor: grab;
+ }

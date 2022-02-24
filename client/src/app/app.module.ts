@@ -2,10 +2,6 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Component1Component } from './component1/component1.component';
-import { Component2Component } from './component2/component2.component';
-import { Component3Component } from './component3/component3.component';
-import { Component4Component } from './component4/component4.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NavComponent } from './nav/nav.component';
@@ -13,20 +9,25 @@ import { FormsModule } from '@angular/forms';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { HomepageComponent } from './homepage/homepage.component';
 import { RegisterComponent } from './register/register.component';
+import { MemberListComponent } from './members/member-list/member-list.component';
+import { MemberDetailComponent } from './members/member-detail/member-detail.component';
+import { ListsComponent } from './lists/lists.component';
+import { MessagesComponent } from './messages/messages.component';
+import { ToastrModule } from 'ngx-toastr';
+import { SharedModule } from './_modules/shared.module';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    Component1Component,
-    Component2Component,
-    Component3Component,
-    Component4Component,
     NavComponent,
     HomepageComponent,
     RegisterComponent,
-    
+    MemberListComponent,
+    MemberDetailComponent,
+    ListsComponent,
+    MessagesComponent,
   ],
   imports: [
     BrowserModule,
@@ -34,7 +35,13 @@ import { RegisterComponent } from './register/register.component';
     HttpClientModule,
     BrowserAnimationsModule,
     FormsModule,
-    BsDropdownModule.forRoot()
+    // importing shared module from modules folder for non angular related modules import
+    SharedModule,
+   
+  ],
+  exports: [
+    BsDropdownModule,
+    ToastrModule
   ],
   providers: [],
   bootstrap: [AppComponent]

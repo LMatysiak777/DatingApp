@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map, ReplaySubject } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { User } from '../_models/user';
 
 @Injectable({
@@ -11,7 +12,7 @@ import { User } from '../_models/user';
 // in difference to components which are destroyed when not used
 export class AccountService {
 // this service provides access to api
-baseUrl = "https://localhost:5001/api/";
+baseUrl = environment.apiUrl;
 private currentUserSource = new ReplaySubject<User>(1);
 currentUser$ = this.currentUserSource.asObservable();
 
@@ -19,7 +20,7 @@ currentUser$ = this.currentUserSource.asObservable();
   constructor(private http: HttpClient) { }
 
   login(model: any){
-    console.log("login from service")
+    console.log("login from service");
     return this.http.post(this.baseUrl+"account/login", model).pipe(
       map((response: User)=> {
         const user = response;
@@ -33,6 +34,7 @@ currentUser$ = this.currentUserSource.asObservable();
   }
 
   register(model:any){
+    console.log("register from service");
     return this.http.post(this.baseUrl + 'account/register', model).pipe(
       map((user: User)=> {
         if (user){

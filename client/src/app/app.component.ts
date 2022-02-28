@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Member } from './_models/member';
 import { User } from './_models/user';
 import { AccountService } from './_services/account.service';
 
@@ -10,16 +11,17 @@ import { AccountService } from './_services/account.service';
 })
 export class AppComponent implements OnInit{
   title = 'The Dating App';
-  users : any;
+  users : Member[];
   // constructor(private http: HttpClient, private accountService: AccountService) {}
   constructor(private accountService: AccountService) {}
-  ngOnInit()  {
+  ngOnInit()  { 
     // this.getUsers();
     this.setCurrentUser();
     // throw new Error('Method not implemented');
   }
 
   setCurrentUser() {
+ 
     const user: User = JSON.parse(localStorage.getItem('user'));
     this.accountService.setCurrentUser(user);
   }

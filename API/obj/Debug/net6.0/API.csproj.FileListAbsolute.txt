@@ -73,3 +73,6 @@ C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\
 C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
 C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\API\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\api\bin\Debug\net6.0\Data\UserSeedData.json
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\api\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\matysiak\Documents\VSC_playground\Udemy_ASPNETCore_Angular_app\api\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

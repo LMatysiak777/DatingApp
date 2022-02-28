@@ -30,10 +30,6 @@ export class NavComponent implements OnInit {
     //user DTO will be returned in response
     this.router.navigateByUrl('/members ')
     // this.loggedIn = true
-    }, error => {
-      console.log("ERROR::: ")
-      console.log(error)
-      this.toastr.error(error.name+": "+error.error)
     })
     console.log(this.model)
   }

@@ -6,6 +6,9 @@ import { MemberListComponent } from './members/member-list/member-list.component
 import { ListsComponent } from './lists/lists.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AuthGuard } from './_guards/auth.guard';
+import { TestErrorsComponent } from './errors/test-errors/test-errors.component';
+import { NotFoundComponent } from './errors/not-found/not-found.component';
+import { ServerErrorComponent } from './errors/server-error/server-error.component';
 // components locations defined in routes array:
 
 const routes: Routes = [
@@ -26,8 +29,11 @@ const routes: Routes = [
   {path: 'members/:id', component: MemberDetailComponent},
   {path: 'lists', component: ListsComponent},
   {path: 'messages', component: MessagesComponent},
+  {path: 'errors', component: TestErrorsComponent},
+  {path: 'not-found', component: NotFoundComponent},
+  {path: 'server-error', component: ServerErrorComponent},
 // something that does not match anything, redirect to home component, wild card match
-  {path: '**', component: HomepageComponent, pathMatch: 'full'}
+  {path: '**', component: NotFoundComponent, pathMatch: 'full'}
 
 
 

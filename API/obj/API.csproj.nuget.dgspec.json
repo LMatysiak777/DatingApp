@@ -1,25 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\API\\API.csproj": {}
+    "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\API\\API.csproj": {
+    "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\API\\API.csproj",
+        "projectPath": "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\api\\API.csproj",
         "packagesPath": "C:\\Users\\matysiak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\API\\obj\\",
+        "outputPath": "C:\\Users\\matysiak\\Documents\\VSC_playground\\Udemy_ASPNETCore_Angular_app\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\matysiak\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\matysiak\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -38,6 +40,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[11.0.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[6.0.2, )"

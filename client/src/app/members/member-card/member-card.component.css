@@ -1,19 +1,40 @@
 .card:hover img {
 
-border: 10px solid white;
+ border: 10px solid white;
  transform: scale(1.2,1.2);
  transition-duration: 500ms;
  transition-timing-function: ease-out;
  opacity: 0.7;
 }
 
-.card img { 
+.card img {  
 transform: scale(1.0,1.0);
 transition-duration: 500ms;
 transition-timing-function: ease-out;
 }
 
 .card-img-wrapper {
+    /* icons container with position relative to allow icons(buttons) to be abosolutely positioned */
+    position: relative;
     overflow: hidden;
 }
 
+.member-icons {
+    position: absolute;
+    bottom: -30%;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+    opacity:0;
+}
+    /* buttons will only be in view with mouse hover above image */
+.card-img-wrapper:hover .member-icons {
+    opacity: 1;
+    bottom: 0;
+}
+
+.animate {
+    /* buttons entry view with animation from bottom in .3s */
+    transition: all 0.3s ease-in-out;
+}

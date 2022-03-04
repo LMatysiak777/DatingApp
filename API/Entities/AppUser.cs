@@ -27,11 +27,10 @@ namespace API.Entities
         //one to many relationship: one user have many photos
         public ICollection<Photo> Photos { get; set; }
 
-        // public int GetAge()
-        // {
+        public ICollection<UserLike> LikedByUsers { get; set; }
 
-        //     return DateOfBirth.CalculateAge();
-        // }
-
+        public ICollection<UserLike> LikedUsers { get; set; }
+ 
+ 
     }
 }
